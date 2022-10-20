@@ -54,5 +54,9 @@ if Array.from(number) returns empty array
 - Arrays are object thus they can use object methods
 - some of array methods are higher order functions which means they can take function as an arg
 
+- Array.prototype.bind
+- Array.prototype.call
+- Array.prototype.apply
+
 
 
