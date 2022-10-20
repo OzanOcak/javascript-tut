@@ -54,9 +54,39 @@ if Array.from(number) returns empty array
 - Arrays are object thus they can use object methods
 - some of array methods are higher order functions which means they can take function as an arg
 
-- Array.prototype.bind
-- Array.prototype.call
-- Array.prototype.apply
+#### check if array:
+
+- Array.isArray(arr) && arr.length ? true :false.  => if arr undefined arr will give err so we need to to check if isArray
+
+#### spread operator
+
+```javascript
+let colors=["red","green","blue"];
+let animals=["dog","cat"];
+let =["earth","water",...colors,...animals]    =>  if colors, it will be nested array 
+```
+
+#### destructions
+
+```javascript
+let[first,,,,fifth] = ["a","b","c","d","e"];  =>  console.log(first);console.log(fifth); // a,e
+```
+
+- Array.prototype.include         => arr.include(1)     // true
+
+#### inheritance (inherited from function):
+
+// arr=[1,2,3]; const add = (a,b,c) => a+b+c;
+
+- Array.prototype.call    =>  add.call(null,1,2,3);  // add is a func so we need call and pass the args
+- Array.prototype.apply   =>  add.apply(null,arr);   // with apply we can pass array as an arg
+- Array.prototype.bind    =>  add1=add.bind(null,1); add1(2,3);  //  with bind, we can bind funcs, like curry
+
+#### *note*: function.apply(null,array) 
+
+- apply,call,bind are just regular function calls, we dont use "this" because arrow functions are implicitly pointed to variable in the stack. Normally functions are objects that are stored in heap but arrow functions assign to const variable which is not assigned to undefined.
+
+* [reference] = this
 
 
 
