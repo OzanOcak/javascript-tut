@@ -46,3 +46,5 @@ console.log("key 2: ", iteratorKeys.next().value); // 1
 const iteratorValues = map1.values();
 console.log("value 1: ", iteratorValues.next().value); // dog
 console.log("value 2: ", iteratorValues.next().value); // wolf
+
+// source : https://dev.to/faisalpathan/why-to-use-map-over-object-in-js-306m
