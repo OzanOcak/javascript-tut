@@ -19,4 +19,20 @@ console.log(set1.size);
 // expected output: 2
 
 set1.clear();
-set1.delete(5;)
+
+
+const set1 = new Set();
+set1.add(42);
+set1.add('forty two');
+
+const iterator1 = set1.entries();
+
+for (const entry of iterator1) {
+  console.log(entry);
+}
+
+function logSetElements(value1, value2, set) {
+  console.log(`s[${value1}] = ${value2}`);
+}
+
+new Set(['foo', 'bar', undefined]).forEach(logSetElements);
