@@ -25,4 +25,4 @@ let result = text.replace(/wonderful/i, "Earth"); // /wonderful/i  --> i is igno
 const pattern = /best/;
 pattern.test("The best things in life are free!");  // true
 
-e.exec("baby jesus") //
+/a/.exec("baby jesus") // 1 (index number)
