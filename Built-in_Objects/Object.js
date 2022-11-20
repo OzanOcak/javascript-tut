@@ -72,7 +72,28 @@ let bands = Object.create(
   bass: { value: "john paul jones, enumerable:true, writable:true, configurable: true},
   }
 );
+    
+//----------
+    
+  'use strict'
+    
+    (function(){
+          let person={
+            name:"tim",
+            lastname:"burton",
+            age:63,
+          }
+          displayName: function(){console.log(person['name'])},
+    })();
 
+// -----------
+
+for(let p in person){
+  console.log( p + ":" + person[p]);
+}
+
+// -----------
+    
 const car = Object.create(vehicle);
 car.doors = 4;
 car.engine = function () {
@@ -115,3 +136,10 @@ function plays({ guitar }) {
   return `${guitar} plays guitar`;
 }
 console.log(plays(bands));
+
+// ----------
+
+obj1={a:"a", b:"b", c:"c"}
+obj2={d:"d", e:"e", f:"f"}
+
+obj3={...obj1, x:"x", ...obj2}
