@@ -79,3 +79,26 @@ credits();
 credits();
 credits();
 credits();
+
+// -------------
+
+let greeting=(function(){
+  
+  let message="hello";
+  let getMessage= function(){
+    return message;
+  }
+  return getMessage;
+}
+        
+console.log(greeting.getMessage());     // Hello
+ // -------
+
+function counter(val){
+    return function(){return ++val};
+}
+
+let counter1=counter(0); // 1
+let counter1=counter(0); // 2
+let counter1=counter(0); // 3
+ })()
