@@ -139,6 +139,12 @@ console.log(plays(bands));
 
 // ----------
 
+function Person(firstName,lastName){
+  this.firstNamt=firstName,
+  this.lastName=lastName,
+  prototype,  // let tom= new Person() , jim.__proto__  
+}
+
 obj1={a:"a", b:"b", c:"c"}
 obj2={d:"d", e:"e", f:"f"}
 
