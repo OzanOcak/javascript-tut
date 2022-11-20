@@ -64,6 +64,15 @@ console.log(truck.engine());
 
 //---
 
+let bands = Object.create(
+  Object.prototype,
+  {
+  vocals: { value: "Robert Plant", enumerable:true, writable:true, configurable: true},
+  guitar: { value: "Jimmy Page",enumerable:true, writable:true, configurable: true},
+  bass: { value: "john paul jones, enumerable:true, writable:true, configurable: true},
+  }
+);
+
 const car = Object.create(vehicle);
 car.doors = 4;
 car.engine = function () {
